@@ -4,6 +4,9 @@ const guessesText = document.querySelector('.guesses-text b');
 const keyboardDiv = document.querySelector('.keyboard');
 const gameModal = document.querySelector('.game-modal');
 const playAgainBtn = document.querySelector('.play-again');
+const isLang = document.getElementById('isLang');
+
+isLang.addEventListener('click', () => isLang.textContent = 'EN')
 
 let currentWord;
 let correctLetters;
