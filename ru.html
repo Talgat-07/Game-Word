@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.min.css" />
+		<title>Game Word</title>
+	</head>
+
+	<body>
+		<div class="game-modal">
+			<div class="content">
+				<img src="img/lost.gif" alt="gif" />
+				<h4>Игра закончена!</h4>
+				<p>Правильное слово было: <b></b></p>
+				<button class="play-again">Играть снова</button>
+			</div>
+		</div>
+		<div style="width: 960px;" class="container">
+			<div class="hangman-box">
+				<img src="img/hangman-0.svg" alt="hangman-img" />
+				<h1>Игра в палачах</h1>
+			</div>
+			<div class="game-box">
+				<ul class="word-display"></ul>
+				<h4 class="hint-text">
+					Подсказка:
+					<b
+						>Далеко-далеко, за словесными горами в стране гласных и согласных
+						живут.</b
+					>
+				</h4>
+				<h4 class="guesses-text">
+					Неправильные догадки:
+					<b>0 / 6</b>
+				</h4>
+				<div class="keyboard"></div>
+			</div>
+			<div class="isLang">
+				<a href="index.html" id="isLang">EN</a>
+			</div>
+		</div>
+		<script src="js/word-list-ru.js" defer></script>
+		<script src="js/main-ru.js" defer></script>
+	</body>
+</html>
