@@ -36,7 +36,6 @@ const getRandomWord = () => {
 };
 
 const gameOver = isVictory => {
-	setTimeout(() => {
 		const modalText = isVictory
 			? `Ты нашел это слово:`
 			: `Правильное слово было:`;
@@ -49,6 +48,7 @@ const gameOver = isVictory => {
 		gameModal.querySelector(
 			'p'
 		).innerHTML = `${modalText} <b>${currentWord}</b>`;
+	setTimeout(() => {
 		gameModal.classList.add('show');
 	}, 500);
 };
