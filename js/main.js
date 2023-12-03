@@ -49,7 +49,7 @@ const gameOver = isVictory => {
 			'p'
 		).innerHTML = `${modalText} <b>${currentWord}</b>`;
 		gameModal.classList.add('show');
-	}, 300);
+	}, 500);
 };
 
 const initGame = (button, clickKedLetter) => {
